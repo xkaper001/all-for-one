@@ -38,13 +38,7 @@ export default function Command() {
         </ActionPanel>
       }
     >
-      <Form.TextArea
-        id="text"
-        title="Input Text"
-        placeholder="Enter text..."
-        value={text}
-        onChange={setText}
-      />
+      <Form.TextArea id="text" title="Input Text" placeholder="Enter text..." value={text} onChange={setText} />
       <Form.TextField
         id="shift"
         title="Shift Amount"
@@ -53,19 +47,13 @@ export default function Command() {
         onChange={setShift}
         autoFocus={true}
       />
-      <Form.Dropdown
-        id="alphabet"
-        title="Alphabet"
-        value={alphabetType}
-        onChange={setAlphabetType}
-      >
+      <Form.Dropdown id="alphabet" title="Alphabet" value={alphabetType} onChange={setAlphabetType}>
         <Form.Dropdown.Item value={AlphabetType.English} title="English (A-Z)" />
         <Form.Dropdown.Item value={AlphabetType.EnglishDigits} title="English + Digits (A-Z0-9)" />
         <Form.Dropdown.Item value={AlphabetType.Latin} title="Latin (No J, U, W)" />
         <Form.Dropdown.Item value={AlphabetType.ASCII} title="ASCII Table (0-127)" />
         <Form.Dropdown.Item value={AlphabetType.Custom} title="Custom Alphabet" />
       </Form.Dropdown>
-
       {alphabetType === AlphabetType.Custom && (
         <Form.TextField
           id="custom"
@@ -75,15 +63,8 @@ export default function Command() {
           onChange={setCustomAlphabet}
         />
       )}
-
-      <Form.Description
-        title={`Forward (+${shift})`}
-        text={resultForward || ""}
-      />・
-      <Form.Description
-        title={`Backward (-${shift})`}
-        text={resultBackward || ""}
-      />
+      <Form.Description title={`Forward (+${shift})`} text={resultForward || ""} />
+      <Form.Description title={`Backward (-${shift})`} text={resultBackward || ""} />
     </Form>
   );
 }

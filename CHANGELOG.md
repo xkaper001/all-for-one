@@ -15,6 +15,10 @@
     - Support for Form-based input.
 - Added **Clipboard Auto-fill**:
     - Automatically populates input from clipboard for all commands.
-- Added **Caesar Cipher** command (`decrypt-caesar`):
-    - Decrypt with Shift N.
+- Added **Caesar Cipher** command (`caesar`):
+    - Encrypt/Decrypt with Shift N.
     - Support for 5 alphabet types (English, Digits, Latin, ASCII, Custom).
+    - Shows both Forward (+N) and Backward (-N) results.
+- Added **ROT Cipher** command (`rot`):
+    - View all 26 rotations of a string instantly.
+    - Support for filtering specific rotation: `text | N` (e.g., `hello | 13`).

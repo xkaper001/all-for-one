@@ -35,9 +35,15 @@
       "mode": "view"
     },
     {
-      "name": "decrypt-caesar",
-      "title": "Decrypt Caesar Cipher",
-      "description": "Decrypt Caesar cipher",
+      "name": "caesar",
+      "title": "Caesar Cipher",
+      "description": "Encrypt/Decrypt with Caesar Cipher",
+      "mode": "view"
+    },
+    {
+      "name": "rot",
+      "title": "ROT Cipher",
+      "description": "Show all 26 rotations of a string",
       "mode": "view"
     }
   ],
