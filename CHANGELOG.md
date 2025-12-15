@@ -2,7 +2,7 @@
 
 ## [0.1.0] - 2025-12-15
 
-- Initial release of **One for All** extension.
+- Initial release of **Hackit** extension.
 - Added **Base** command (`base`):
     - Convert numbers between binary, octal, decimal, hexadecimal, and ASCII.
     - Improved Hex detection (supports space-separated strings).
