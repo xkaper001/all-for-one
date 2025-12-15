@@ -51,6 +51,18 @@
       "title": "XOR Calculator",
       "description": "Calculate bitwise XOR of two inputs",
       "mode": "view"
+    },
+    {
+      "name": "aes",
+      "title": "AES Encryption",
+      "description": "Encrypt text using AES-256-CBC",
+      "mode": "view"
+    },
+    {
+      "name": "pbkdf2",
+      "title": "PBKDF2 Key Derivation",
+      "description": "Derive key using PBKDF2-SHA256",
+      "mode": "view"
     }
   ],
   "dependencies": {

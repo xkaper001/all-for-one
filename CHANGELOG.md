@@ -22,3 +22,14 @@
 - Added **ROT Cipher** command (`rot`):
     - View all 26 rotations of a string instantly.
     - Support for filtering specific rotation: `text | N` (e.g., `hello | 13`).
+- Added **XOR Calculator** command (`xor`):
+    - Bitwise XOR of two inputs.
+    - Supports Auto, Hex, Binary, Decimal, and ASCII input types.
+- Enhanced **Hash** command:
+    - Support for recursive hashing (`text | rounds`).
+- Added **AES Encryption** command (`aes`):
+    - Form-based UI.
+    - Encrypt text using AES-256-CBC with custom Key.
+- Added **PBKDF2 Key Derivation** command (`pbkdf2`):
+    - Form-based UI.
+    - Derive keys using PBKDF2-SHA256 with custom Salt and Iterations.

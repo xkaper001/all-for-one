@@ -39,18 +39,23 @@ export default function Command() {
     const algos = ["md5", "sha1", "sha256", "sha512"];
     const results = [];
 
+    // Standard Hashes
     for (const algo of algos) {
       let currentHash = textToHash;
       try {
         for (let i = 0; i < iterations; i++) {
           currentHash = crypto.createHash(algo).update(currentHash).digest("hex");
         }
-        results.push({ algo, hash: currentHash, rounds: iterations });
+        results.push({
+          algo,
+          hash: currentHash,
+          rounds: iterations,
+          details: `${algo.toUpperCase()}${iterations > 1 ? ` (${iterations} rounds)` : ""}`,
+        });
       } catch {
-        // Ignore unsupported algos if any
+        // Ignore unsupported
       }
     }
-
     return results;
   };
 
@@ -70,7 +75,7 @@ export default function Command() {
           <List.Item
             key={item.algo}
             title={item.hash}
-            subtitle={`${item.algo.toUpperCase()} (${item.rounds} rounds)`}
+            subtitle={item.details}
             actions={
               <ActionPanel>
                 <Action.CopyToClipboard content={item.hash} />
