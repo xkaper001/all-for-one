@@ -27,6 +27,12 @@
       "title": "Base",
       "description": "Convert numbers between binary, octal, decimal, hexadecimal, and ASCII",
       "mode": "view"
+    },
+    {
+      "name": "decrypt-vigenere",
+      "title": "Decrypt Vigenere",
+      "description": "Decrypt Vigenère cipher text with a key",
+      "mode": "view"
     }
   ],
   "dependencies": {

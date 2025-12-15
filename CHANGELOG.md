@@ -10,3 +10,8 @@
 - Added **Hash** command (`hash`):
     - Support for MD5, SHA1, SHA256, SHA512.
     - Recursive hashing support.
+- Added **Decrypt Vigenere** command (`decrypt-vigenere`):
+    - Decrypt Vigenère ciphers with a key.
+    - Support for Form-based input.
+- Added **Clipboard Auto-fill**:
+    - Automatically populates input from clipboard for all commands.
