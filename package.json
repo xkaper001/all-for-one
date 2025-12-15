@@ -45,6 +45,12 @@
       "title": "ROT Cipher",
       "description": "Show all 26 rotations of a string",
       "mode": "view"
+    },
+    {
+      "name": "xor",
+      "title": "XOR Calculator",
+      "description": "Calculate bitwise XOR of two inputs",
+      "mode": "view"
     }
   ],
   "dependencies": {
