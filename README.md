@@ -1,4 +1,4 @@
-# Hackit 🦸‍♂️
+# Hackit 🔥
 
 > All what a hacker needs.
 
