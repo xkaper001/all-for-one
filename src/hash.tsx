@@ -1,9 +1,17 @@
-import { ActionPanel, Action, List } from "@raycast/api";
-import { useState } from "react";
+import { ActionPanel, Action, List, Clipboard } from "@raycast/api";
+import { useState, useEffect } from "react";
 import crypto from "crypto";
 
 export default function Command() {
   const [searchText, setSearchText] = useState("");
+
+  useEffect(() => {
+    Clipboard.readText().then((text) => {
+      if (text) {
+        setSearchText(text);
+      }
+    });
+  }, []);
 
   const getHashes = (input: string) => {
     if (!input) return [];
@@ -50,6 +58,7 @@ export default function Command() {
 
   return (
     <List
+      searchText={searchText}
       onSearchTextChange={setSearchText}
       searchBarPlaceholder="Enter text to hash (e.g. 'admin' or 'admin | 5')..."
       throttle

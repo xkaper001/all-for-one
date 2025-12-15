@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "one-for-all",
-  "title": "One for All",
+  "title": "One for All - Hacker Tools",
   "description": "All what a hacker needs.",
   "icon": "extension-icon.png",
   "version": "0.1.0",
@@ -11,7 +11,8 @@
     "Windows"
   ],
   "categories": [
-    "Developer Tools"
+    "Developer Tools",
+    "Data"
   ],
   "license": "MIT",
   "commands": [
@@ -23,7 +24,7 @@
     },
     {
       "name": "base",
-      "title": "Base Converter",
+      "title": "Base",
       "description": "Convert numbers between binary, octal, decimal, hexadecimal, and ASCII",
       "mode": "view"
     }
