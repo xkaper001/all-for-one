@@ -38,8 +38,15 @@ export default function Command() {
         value={ciphertext}
         onChange={setCiphertext}
       />
-      <Form.TextField id="key" title="Key" placeholder="Enter secret key..." value={key} onChange={setKey} autoFocus={true} />
-      <Form.Description title="Decrypted Text" text={result || "Result will appear here..."} />
+      <Form.TextField
+        id="key"
+        title="Key"
+        placeholder="Enter secret key..."
+        value={key}
+        onChange={setKey}
+        autoFocus={true}
+      />
+      <Form.Description title="Decrypted Text" text={result || ""} />
     </Form>
   );
 }

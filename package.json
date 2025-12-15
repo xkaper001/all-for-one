@@ -30,8 +30,14 @@
     },
     {
       "name": "decrypt-vigenere",
-      "title": "Decrypt Vigenere",
-      "description": "Decrypt Vigenère cipher text with a key",
+      "title": "Decrypt Vigenère Cipher",
+      "description": "Decrypt Vigenère cipher",
+      "mode": "view"
+    },
+    {
+      "name": "decrypt-caesar",
+      "title": "Decrypt Caesar Cipher",
+      "description": "Decrypt Caesar cipher",
       "mode": "view"
     }
   ],

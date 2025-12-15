@@ -15,3 +15,6 @@
     - Support for Form-based input.
 - Added **Clipboard Auto-fill**:
     - Automatically populates input from clipboard for all commands.
+- Added **Caesar Cipher** command (`decrypt-caesar`):
+    - Decrypt with Shift N.
+    - Support for 5 alphabet types (English, Digits, Latin, ASCII, Custom).
