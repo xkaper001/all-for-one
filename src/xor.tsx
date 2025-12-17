@@ -2,11 +2,12 @@ import { ActionPanel, Action, Form, Clipboard } from "@raycast/api";
 import { useState, useEffect } from "react";
 import { parseInput, performXor, formatOutput, InputType, OutputType } from "./utils/xor";
 
-export default function Command() {
+export default function Command(props: { arguments: { key?: string } }) {
+  const { key: argKey } = props.arguments;
   const [inputA, setInputA] = useState("");
   const [typeA, setTypeA] = useState<string>(InputType.Auto);
 
-  const [inputB, setInputB] = useState("");
+  const [inputB, setInputB] = useState(argKey || "");
   const [typeB, setTypeB] = useState<string>(InputType.Auto);
 
   const [outputType, setOutputType] = useState<string>(OutputType.Hex);

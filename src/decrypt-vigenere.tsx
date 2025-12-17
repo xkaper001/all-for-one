@@ -2,9 +2,10 @@ import { ActionPanel, Action, Form, Clipboard } from "@raycast/api";
 import { useState, useEffect } from "react";
 import { decryptVigenere } from "./utils/vigenere";
 
-export default function Command() {
+export default function Command(props: { arguments: { key?: string } }) {
+  const { key: argKey } = props.arguments;
   const [ciphertext, setCiphertext] = useState("");
-  const [key, setKey] = useState("");
+  const [key, setKey] = useState(argKey || "");
   const [result, setResult] = useState("");
 
   useEffect(() => {

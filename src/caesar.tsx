@@ -2,9 +2,10 @@ import { ActionPanel, Action, Form, Clipboard } from "@raycast/api";
 import { useState, useEffect } from "react";
 import { caesarCipher, AlphabetType } from "./utils/caesar";
 
-export default function Command() {
+export default function Command(props: { arguments: { shift?: string } }) {
+  const { shift: argShift } = props.arguments;
   const [text, setText] = useState("");
-  const [shift, setShift] = useState("1");
+  const [shift, setShift] = useState(argShift || "1");
   const [alphabetType, setAlphabetType] = useState<string>(AlphabetType.English);
   const [customAlphabet, setCustomAlphabet] = useState("");
   const [resultForward, setResultForward] = useState("");

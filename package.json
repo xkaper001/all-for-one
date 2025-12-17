@@ -35,14 +35,30 @@
       "title": "Decrypt Vigenère Cipher",
       "subtitle": "Hackit",
       "description": "Decrypt Vigenère cipher",
-      "mode": "view"
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "key",
+          "placeholder": "Key",
+          "type": "text",
+          "required": false
+        }
+      ]
     },
     {
       "name": "caesar",
       "title": "Caesar Cipher",
       "subtitle": "Hackit",
       "description": "Encrypt/Decrypt with Caesar Cipher",
-      "mode": "view"
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "shift",
+          "placeholder": "Shift",
+          "type": "text",
+          "required": false
+        }
+      ]
     },
     {
       "name": "rot",
@@ -56,21 +72,51 @@
       "title": "XOR Calculator",
       "subtitle": "Hackit",
       "description": "Calculate bitwise XOR of two inputs",
-      "mode": "view"
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "key",
+          "placeholder": "Key / Input B",
+          "type": "text",
+          "required": false
+        }
+      ]
     },
     {
       "name": "aes",
       "title": "AES Encryption",
       "subtitle": "Hackit",
       "description": "Encrypt text using AES-256-CBC",
-      "mode": "view"
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "key",
+          "placeholder": "Key",
+          "type": "password",
+          "required": false
+        }
+      ]
     },
     {
       "name": "pbkdf2",
       "title": "PBKDF2 Key Derivation",
       "subtitle": "Hackit",
       "description": "Derive key using PBKDF2-SHA256",
-      "mode": "view"
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "salt",
+          "placeholder": "Salt",
+          "type": "text",
+          "required": false
+        },
+        {
+          "name": "iterations",
+          "placeholder": "Iterations",
+          "type": "text",
+          "required": false
+        }
+      ]
     }
   ],
   "dependencies": {

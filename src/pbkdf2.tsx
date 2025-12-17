@@ -2,10 +2,11 @@ import { ActionPanel, Action, Form, Clipboard } from "@raycast/api";
 import { useState, useEffect } from "react";
 import crypto from "crypto";
 
-export default function Command() {
+export default function Command(props: { arguments: { salt?: string; iterations?: string } }) {
+  const { salt: argSalt, iterations: argIterations } = props.arguments;
   const [passphrase, setPassphrase] = useState("");
-  const [salt, setSalt] = useState("salt");
-  const [iterations, setIterations] = useState("10000");
+  const [salt, setSalt] = useState(argSalt || "salt");
+  const [iterations, setIterations] = useState(argIterations || "10000");
   const [result, setResult] = useState("");
 
   useEffect(() => {
